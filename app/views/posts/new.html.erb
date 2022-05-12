@@ -1,1 +1,19 @@
 <h1>New Post</h1>
+
+<p>
+
+<%= form_with :model => @post do |form| %>
+  <p>
+    <%= form.label "Author", "Author Name" %>
+    <%= form.text_field "author" %>
+  </p>
+  <p>
+    <%= form.label "Post your taco" %>
+    <%= form.text_field "image" %>
+    <%= form.label "Taco words" %>
+    <%= form.text_field "body" %>
+  </p>
+  <%= form.submit %>
+<% end %>
+
+</p>
